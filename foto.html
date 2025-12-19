@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>📸 Prove fotografiche</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div class="badge">📸</div>
+      <h1>Prove fotografiche</h1>
+      <p class="lead">se ci denunci, neghiamo tutto</p>
+    </header>
+
+    <section class="card">
+      <p>
+        Avviso legale: le seguenti immagini dimostrano che:
+      </p>
+      <ul class="list">
+        <li>ci siamo divertite</li>
+        <li>rifaremmo tutto</li>
+        <li>forse serviva un adulto</li>
+      </ul>
+
+      <div class="photo-grid">
+        <!--
+          ✅ COME AGGIUNGERE FOTO:
+          1) metti le immagini nella repo in /img (crea cartella "img")
+          2) usa: <img src="img/nomefile.jpg" alt="...">
+        -->
+        <div class="photo ph">Foto 1</div>
+        <div class="photo ph">Foto 2</div>
+        <div class="photo ph">Foto 3</div>
+        <div class="photo ph">Foto 4</div>
+        <div class="photo ph">Foto 5</div>
+        <div class="photo ph">Foto 6</div>
+      </div>
+
+      <p class="quote">
+        Buon Natale Jessica 🎄<br>
+        da quattro persone che ti vogliono bene<br>
+        ma non abbastanza da lasciarti in pace.
+      </p>
+
+      <div class="actions">
+        <a class="btn ghost" href="menu.html">← Torna al menu</a>
+        <a class="btn primary" href="end.html" onclick="confetti()">Ho finito (forse) →</a>
+      </div>
+    </section>
+
+    <div id="fx" aria-hidden="true"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
