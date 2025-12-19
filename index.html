@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>🎄 Biglietto Segreto</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3" />
+  <script src="script.js?v=3" defer></script>
 </head>
 <body>
   <main class="container">
+    <div class="badge">🎄</div>
     <h1>Complimenti.</h1>
 
-    <p>
-      Se stai leggendo significa che:<br>
-      – hai visto un QR<br>
-      – hai ceduto alla tentazione<br>
+    <p class="lead">
+      Se stai leggendo significa che:<br />
+      – hai visto un QR<br />
+      – hai ceduto alla tentazione<br />
       – ora è troppo tardi
     </p>
 
-    <p class="muted">
-      Questo <strong>potrebbe</strong> sembrare un bigliettino di Natale.<br>
-      Ma non lo è.
-    </p>
+    <div class="panel">
+      <p>
+        Questo <strong>potrebbe</strong> sembrare un bigliettino di Natale.<br />
+        Ma non lo è.
+      </p>
+      <p class="muted">
+        (O forse sì. Dipende da quanto sei pronta al trauma.)
+      </p>
 
-    <div class="buttons">
-      <a href="start.html" class="btn">Vuoi continuare?</a>
-      <a href="start.html" class="btn secondary">No (bugia)</a>
+      <div class="buttons">
+        <a href="./start.html" class="btn primary">→ Vuoi continuare?</a>
+        <a href="./start.html" class="btn secondary">No (bugia)</a>
+      </div>
     </div>
+
+    <p class="tiny muted">⚠️ Aprendo questo sito accetti di ridere almeno una volta.</p>
   </main>
 </body>
 </html>
