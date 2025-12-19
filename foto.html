@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>📸 Foto</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3" />
+  <script src="script.js?v=3" defer></script>
 </head>
 <body>
   <main class="container">
+    <div class="badge">📸</div>
     <h1>Prove fotografiche</h1>
+    <p class="muted">se ci denunci, neghiamo tutto</p>
 
-    <p>
-      Le seguenti immagini dimostrano che:<br>
-      – ci siamo divertite<br>
-      – rifaremmo tutto<br>
-      – forse serviva un adulto
-    </p>
+    <div class="panel">
+      <p>Le seguenti immagini dimostrano che:</p>
+      <ul class="list">
+        <li>ci siamo divertite</li>
+        <li>rifaremmo tutto</li>
+        <li>forse serviva un adulto</li>
+      </ul>
 
-    <div class="photos">
-      <div class="ph">Foto 1</div>
-      <div class="ph">Foto 2</div>
-      <div class="ph">Foto 3</div>
-      <div class="ph">Foto 4</div>
+      <div class="photos">
+        <div class="ph">Foto 1</div>
+        <div class="ph">Foto 2</div>
+        <div class="ph">Foto 3</div>
+        <div class="ph">Foto 4</div>
+        <div class="ph">Foto 5</div>
+        <div class="ph">Foto 6</div>
+      </div>
+
+      <p class="muted tiny">
+        (poi tu sostituisci i placeholder con <code>&lt;img src="img/..."&gt;</code>)
+      </p>
+
+      <div class="buttons">
+        <a href="./menu.html" class="btn secondary">← Torna al menu</a>
+        <a href="./end.html" class="btn primary">Ho finito (forse) →</a>
+      </div>
     </div>
-
-    <p>
-      Buon Natale Jessica 🎄
-    </p>
-
-    <a href="menu.html" class="back">← Torna al menu</a>
   </main>
 </body>
 </html>
