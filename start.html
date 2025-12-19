@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>🎁 Ultima possibilità</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3" />
+  <script src="script.js?v=3" defer></script>
 </head>
 <body>
   <main class="container">
+    <div class="badge">🎁</div>
     <h1>Ok.</h1>
 
-    <p>
-      Prima di andare avanti, sappi che:<br>
-      – siamo in quattro<br>
-      – ci abbiamo pensato<br>
+    <p class="lead">
+      Prima di andare avanti, sappi che:<br />
+      – siamo in quattro<br />
+      – ci abbiamo pensato<br />
       – non ci siamo fermate
     </p>
 
-    <p class="muted">
-      Ultima possibilità per tornare indietro.
-    </p>
+    <div class="panel">
+      <p class="muted">Ultima possibilità per tornare indietro.</p>
 
-    <div class="buttons">
-      <a href="menu.html" class="btn">Continuiamo</a>
-      <a href="menu.html" class="btn danger">Ho paura</a>
+      <div class="buttons">
+        <a href="./menu.html" class="btn primary">→ Continuiamo</a>
+        <a href="./menu.html" class="btn danger">Ho paura 😭</a>
+      </div>
+
+      <a href="./index.html" class="back">← Torna indietro</a>
     </div>
-
-    <a href="index.html" class="back">← Torna indietro</a>
   </main>
 </body>
 </html>
