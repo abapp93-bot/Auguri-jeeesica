@@ -1,55 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>🎄 Scegli</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎄 Menu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="wrap">
-    <header class="hero">
-      <div class="badge">✨</div>
-      <h1>Scegli cosa aprire</h1>
-      <p class="lead">
-        L’ordine non cambierà il giudizio su di te.
-        <br><span class="muted">(ma cambierà la tua autostima)</span>
-      </p>
-    </header>
+  <main class="container">
+    <h1>Scegli cosa aprire</h1>
 
-    <section class="grid">
-      <a class="tile" href="ironico.html" onclick="sparkle(event)">
-        <div class="tile-emoji">🎁</div>
-        <div class="tile-title">Regalo ironico</div>
-        <div class="tile-sub">per gente forte</div>
-      </a>
+    <p class="muted">
+      L’ordine non cambierà il giudizio su di te.
+    </p>
 
-      <a class="tile" href="sentimentale.html" onclick="sparkle(event)">
-        <div class="tile-emoji">🎄</div>
-        <div class="tile-title">Quasi sentimentale</div>
-        <div class="tile-sub">non montarti la testa</div>
-      </a>
+    <div class="menu">
+      <a href="ironico.html" class="card">🎁 Regalo ironico</a>
+      <a href="sentimentale.html" class="card">🎄 Quasi sentimentale</a>
+      <a href="foto.html" class="card">📸 Prove fotografiche</a>
+    </div>
 
-      <a class="tile" href="foto.html" onclick="sparkle(event)">
-        <div class="tile-emoji">📸</div>
-        <div class="tile-title">Prove fotografiche</div>
-        <div class="tile-sub">materiale compromettente</div>
-      </a>
-    </section>
-
-    <section class="card small">
-      <p class="muted">
-        Suggerimento: aprili tutti. Poi fai finta di non aver pianto.
-      </p>
-      <div class="nav">
-        <a class="link" href="start.html">← Indietro</a>
-        <a class="link" href="secret.html">???</a>
-      </div>
-    </section>
-
-    <div id="fx" aria-hidden="true"></div>
+    <a href="secret.html" class="secret">?</a>
   </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
