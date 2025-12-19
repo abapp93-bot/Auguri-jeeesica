@@ -1,29 +1,31 @@
-const colors = ["#fbbf24", "#ef4444", "#22c55e", "#60a5fa", "#fde68a"];
+const COLORS = ["#fbbf24", "#ef4444", "#22c55e", "#60a5fa", "#fde68a"];
+
+function rand(min, max) {
+  return Math.random() * (max - min) + min;
+}
 
 function createConfetto() {
-  const confetto = document.createElement("div");
-  confetto.className = "confetto";
+  const d = document.createElement("div");
+  d.className = "confetto";
 
-  const size = Math.random() * 6 + 6;
-  confetto.style.width = size + "px";
-  confetto.style.height = size * 1.4 + "px";
+  const size = rand(6, 12);
+  d.style.width = `${size}px`;
+  d.style.height = `${size * 1.35}px`;
+  d.style.left = `${rand(0, 100)}vw`;
+  d.style.background = COLORS[Math.floor(Math.random() * COLORS.length)];
+  d.style.animationDuration = `${rand(3.2, 6.2)}s`;
+  d.style.transform = `rotate(${rand(0, 180)}deg)`;
 
-  confetto.style.left = Math.random() * 100 + "vw";
-  confetto.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-  confetto.style.animationDuration = Math.random() * 3 + 3 + "s";
-
-  document.body.appendChild(confetto);
-
-  setTimeout(() => confetto.remove(), 7000);
+  document.body.appendChild(d);
+  setTimeout(() => d.remove(), 8000);
 }
 
 function confettiBurst(amount = 24) {
   for (let i = 0; i < amount; i++) {
-    setTimeout(createConfetto, i * 80);
+    setTimeout(createConfetto, i * 70);
   }
 }
 
-// 🎄 AUTOMATICO ALL’APERTURA PAGINA
 window.addEventListener("load", () => {
-  confettiBurst(28);
+  confettiBurst(26);
 });
