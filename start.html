@@ -1,44 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>🎄 Biglietto segreto</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎁 Ultima possibilità</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="wrap">
-    <header class="hero">
-      <div class="badge">🎄</div>
-      <h1>Complimenti.</h1>
-      <p class="lead">
-        Se stai leggendo significa che:
-        <br>— hai visto un QR
-        <br>— hai ceduto alla tentazione
-        <br>— ora è troppo tardi
-      </p>
-    </header>
+  <main class="container">
+    <h1>Ok.</h1>
 
-    <section class="card">
-      <p>
-        Questo <strong>potrebbe</strong> sembrare un biglietto di Natale.
-        <br>Ma non lo è.
-        <br><span class="muted">(O forse sì. Dipende da quanto sei coraggiosa.)</span>
-      </p>
+    <p>
+      Prima di andare avanti, sappi che:<br>
+      – siamo in quattro<br>
+      – ci abbiamo pensato<br>
+      – non ci siamo fermate
+    </p>
 
-      <div class="actions">
-        <a class="btn primary" href="start.html">→ Vuoi continuare?</a>
-        <a class="btn ghost" href="index.html" onclick="sparkle(event)">No (bugia)</a>
-      </div>
-    </section>
+    <p class="muted">
+      Ultima possibilità per tornare indietro.
+    </p>
 
-    <footer class="footer">
-      <span class="tiny">⚠️ Aprendo questo sito accetti di ridere almeno una volta.</span>
-    </footer>
+    <div class="buttons">
+      <a href="menu.html" class="btn">Continuiamo</a>
+      <a href="menu.html" class="btn danger">Ho paura</a>
+    </div>
 
-    <div id="fx" aria-hidden="true"></div>
+    <a href="index.html" class="back">← Torna indietro</a>
   </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
