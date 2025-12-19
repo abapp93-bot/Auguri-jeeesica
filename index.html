@@ -1,44 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>🎄 Biglietto segreto</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎄 Biglietto Segreto</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="wrap">
-    <header class="hero">
-      <div class="badge">🎄</div>
-      <h1>Complimenti.</h1>
-      <p class="lead">
-        Se stai leggendo significa che:
-        <br>— hai visto un QR
-        <br>— hai ceduto alla tentazione
-        <br>— ora è troppo tardi
-      </p>
-    </header>
+  <main class="container">
+    <h1>Complimenti.</h1>
 
-    <section class="card">
-      <p>
-        Questo <strong>potrebbe</strong> sembrare un biglietto di Natale.
-        <br>Ma non lo è.
-        <br><span class="muted">(O forse sì. Dipende da quanto sei coraggiosa.)</span>
-      </p>
+    <p>
+      Se stai leggendo significa che:<br>
+      – hai visto un QR<br>
+      – hai ceduto alla tentazione<br>
+      – ora è troppo tardi
+    </p>
 
-      <div class="actions">
-        <a class="btn primary" href="start.html">→ Vuoi continuare?</a>
-        <a class="btn ghost" href="index.html" onclick="sparkle(event)">No (bugia)</a>
-      </div>
-    </section>
+    <p class="muted">
+      Questo <strong>potrebbe</strong> sembrare un bigliettino di Natale.<br>
+      Ma non lo è.
+    </p>
 
-    <footer class="footer">
-      <span class="tiny">⚠️ Aprendo questo sito accetti di ridere almeno una volta.</span>
-    </footer>
-
-    <div id="fx" aria-hidden="true"></div>
+    <div class="buttons">
+      <a href="start.html" class="btn">Vuoi continuare?</a>
+      <a href="start.html" class="btn secondary">No (bugia)</a>
+    </div>
   </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
