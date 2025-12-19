@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🎄 Menu</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✨ Menu</title>
+  <link rel="stylesheet" href="style.css?v=3" />
+  <script src="script.js?v=3" defer></script>
 </head>
 <body>
   <main class="container">
+    <div class="badge">✨</div>
     <h1>Scegli cosa aprire</h1>
 
     <p class="muted">
-      L’ordine non cambierà il giudizio su di te.
+      L’ordine non cambierà il giudizio su di te.<br />
+      <span class="tiny">(ma cambierà la tua autostima)</span>
     </p>
 
     <div class="menu">
-      <a href="ironico.html" class="card">🎁 Regalo ironico</a>
-      <a href="sentimentale.html" class="card">🎄 Quasi sentimentale</a>
-      <a href="foto.html" class="card">📸 Prove fotografiche</a>
+      <a href="./ironico.html" class="card">
+        <span class="card-emoji">🎁</span>
+        <span class="card-title">Regalo ironico</span>
+        <span class="card-sub">per gente forte</span>
+      </a>
+
+      <a href="./sentimentale.html" class="card">
+        <span class="card-emoji">🎄</span>
+        <span class="card-title">Quasi sentimentale</span>
+        <span class="card-sub">non montarti la testa</span>
+      </a>
+
+      <a href="./foto.html" class="card">
+        <span class="card-emoji">📸</span>
+        <span class="card-title">Prove fotografiche</span>
+        <span class="card-sub">materiale compromettente</span>
+      </a>
     </div>
 
-    <a href="secret.html" class="secret">?</a>
+    <div class="panel small">
+      <p class="muted tiny">Suggerimento: aprili tutti. Poi fai finta di non aver pianto.</p>
+      <div class="nav">
+        <a href="./start.html" class="back">← Indietro</a>
+        <a href="./secret.html" class="secret">???</a>
+      </div>
+    </div>
   </main>
 </body>
 </html>
-
