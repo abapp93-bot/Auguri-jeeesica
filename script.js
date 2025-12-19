@@ -1,51 +1,29 @@
-function rand(min, max){ return Math.random() * (max - min) + min; }
+const colors = ["#fbbf24", "#ef4444", "#22c55e", "#60a5fa", "#fde68a"];
 
-function makeDot(x, y){
-  const fx = document.getElementById("fx");
-  if(!fx) return;
+function createConfetto() {
+  const confetto = document.createElement("div");
+  confetto.className = "confetto";
 
-  const d = document.createElement("div");
-  d.className = "fx-dot";
+  const size = Math.random() * 6 + 6;
+  confetto.style.width = size + "px";
+  confetto.style.height = size * 1.4 + "px";
 
-  const angle = rand(0, Math.PI * 2);
-  const dist = rand(80, 220);
+  confetto.style.left = Math.random() * 100 + "vw";
+  confetto.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+  confetto.style.animationDuration = Math.random() * 3 + 3 + "s";
 
-  d.style.left = (x - 5) + "px";
-  d.style.top  = (y - 5) + "px";
+  document.body.appendChild(confetto);
 
-  d.style.setProperty("--x0", "0px");
-  d.style.setProperty("--y0", "0px");
-  d.style.setProperty("--x1", (Math.cos(angle) * dist) + "px");
-  d.style.setProperty("--y1", (Math.sin(angle) * dist) + "px");
-
-  // random-ish palette
-  const colors = [
-    "rgba(251,191,36,.95)", // gold
-    "rgba(255,77,109,.92)", // red
-    "rgba(96,165,250,.90)", // ice
-    "rgba(52,211,153,.85)"  // green
-  ];
-  d.style.background = colors[Math.floor(Math.random() * colors.length)];
-  d.style.width = rand(8, 14) + "px";
-  d.style.height = d.style.width;
-
-  fx.appendChild(d);
-  setTimeout(() => d.remove(), 950);
+  setTimeout(() => confetto.remove(), 7000);
 }
 
-function sparkle(e){
-  const x = (e && e.clientX) || (window.innerWidth * 0.5);
-  const y = (e && e.clientY) || (window.innerHeight * 0.35);
-  for(let i=0;i<14;i++) makeDot(x, y);
+function confettiBurst(amount = 24) {
+  for (let i = 0; i < amount; i++) {
+    setTimeout(createConfetto, i * 80);
+  }
 }
 
-function confetti(){
-  const x = window.innerWidth * 0.5;
-  const y = window.innerHeight * 0.35;
-  for(let i=0;i<26;i++) makeDot(x + rand(-40,40), y + rand(-20,20));
-}
-
-// tiny auto sparkle on first load
+// 🎄 AUTOMATICO ALL’APERTURA PAGINA
 window.addEventListener("load", () => {
-  setTimeout(() => confetti(), 250);
+  confettiBurst(28);
 });
